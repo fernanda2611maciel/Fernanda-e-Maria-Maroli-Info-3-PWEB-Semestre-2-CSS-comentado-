@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+      /*Neste bloco,foram inseridos diversas propriedades,onde cada uma tem um função diferente das demais, podemos dizer que a propriedade MARGIN, foi utilizada para inserir um espaçamento externo ao elemento,ou seja, ao redor da borda. Já a propriedade PADDING, está definindo um espaço interno, entre o elemento HTML e a borda.
+ o elemento BOX-SIZING com o valor BORDER-BOX faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.
+ E a propriedade FONT-FAMILY é destinada a qual familia pertencerá o conjunto de letras ou palavras utilizadas-que no caso foi "times new roman".*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+       /*No bloco "BODY" utilizamos novamente a propriedade FONT-FAMILY o qual é destinada a qual familia pertencerá o conjunto de letras ou palavras utilizadas-que no caso foi "times new roman" novamente. E no elemento BACKGROUND-COLOR, onde foi utilizado para  alterar a cor do plano de fundo de um elemento ou do documento como um todo.*/
+body {
+   font-family: "Times New Roman", Times, serif;
+ background-color: #ffffff;
+}
+
+     /*No bloco "h2" utilizamos a propriedade BACKGROUND-COLOR, sendo utilizado para  alterar a cor do plano de fundo de um elemento, o qual foi palavras, o elemento COLOR se refere a coloração das letras. E a  propriedade DISPLAY:INLINE faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha, ou seja quando o elemento encontra-se entre dois blocos ele forma o chamado 'bloco anônimo' e é renderizado com a menor largura possível.*/
+h2 {
+  background-color: #000000;
+  color: #fff;
+  display: inline;
+}
+
+/*No bloco "menu-container" utilizamos novamente a propriedade COLOR para a coloração de letras, a propriedade BACKGROUND-COLOR para alterar a cor do plano de fundo de um elemento, a propriedade PADDING define um espaço interno, entre o elemento HTML e a borda. o DISPLAY:FLEX foi utilizado para dispor os elementos dentro de um determinado container em linhas ou colunas, deixando os elementos espaçados e horizontais. No elemento Justify-content, ocorre o controle do alinhamento de todos os itens no eixo principal, juntamente com o valor CENTER, assim deixando o "menu-container" no centro, ou seja, centralizado.*/
+.menu-container {
+  color: #ffff;
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+} 
+
+/*No bloco "menu" utilizamos WIDTH para determinar a largura do elemento "menu", o DISPLAY:FLEX foi utilizado para dispor os elementos dentro de um determinado container em linhas ou colunas. O JUSTIFY-CONTENT,ocorre o controle do alinhamento de todos os itens no eixo principal, juntamente com o valor SPACE-AROUND, onde os itens foram de forma uniforme distribuídos ao longo do eixo principal. E tambem utilizamos a propriedade FONT-FAMILY onde destinada a qual familia pertencerá o conjunto de letras ou palavras utilizadas-que no caso foi "Inconsolata".*/
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Inconsolata', monospace;
+}
+
+/*No bloco "menu-comida" utilizamos o DISPLAY:FLEX,onde foi utilizado para dispor os elementos dentro de um determinado container em linhas ou colunas,sem espaçamentos. No elemento Justify-content, ocorre o controle do alinhamento de todos os itens no eixo principal, juntamente com o valor CENTER, assim deixando o "menu-comida" no centro, ou seja, centralizado.Utilizamos tambem a propriedade ALIGN-ITEMS: CENTER, o qual garante que os flex-items dentro de um elemento com display flex vão centralizar na vertical ou horizontal. Utilizamos tambem a propriedade FLEX-WRAP:WRAP,  onde os itens flexíveis são forçados a ficarem na mesma linha ou podem ser quebradas em outras varias linhas. Se o argumento for valido, ele define a direção em que as linhas são empilhadas. A propriedade COLOR definindo a cor do texto, BACKGROUND-COLOR utilizado para  alterar a cor do plano de fundo de um elemento e WIDTH e HEIGHT definindo altura e largura do elemento.*/
+.menu-comida{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fef6f6;
+  background-color: #000000;
+  width: 50%;
+  height: 40%;
+}
+
+/*No bloco "comidas" utilizamos a propriedade BOX-SHADOW para para adicionar efeitos de sombra em volta de um elemento. elemento WIDTH para largura.Utilizamos tambem a propriedade ALIGN-ITEMS: CENTER, o qual garante que os flex-items dentro de um elemento com display flex vão centralizar na vertical ou horizontal.*/
+.comidas{
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  align-items: center;
+}
+
+/*No bloco "footer" utilizamos o DISPLAY:FLEX,onde  é utilizado para dispor os elementos dentro de um determinado container em linhas ou colunas,com espaçamentos. E tambem utilizamos o elemento JUSTIFY-CONTENT,  onde ocorre o controle do alinhamento de todos os itens no eixo principal, juntamente com o valor SPACE-BETWEEN, onde o primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles.*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*No bloco "footer-items" utilizamos a propriedade BACKGROUND-COLOR para alterar a cor do plano de fundo de um elemento, a propriedade HEIGHT para altura e utilizamos tambem FLEX:1, onde torna o item flexível  e define a base flexível como zero,  assim resulta em um item que recebe a proporção especificada de espaço livre no contêiner flexível.*/
+.footer-item {
+  background-color: #000000;
+  height: 100px;
+  flex: 1;
+}
+
+/*No bloco "telão" utilizamos a propriedade  MARGIN,  o qual define uma área de margem  nos quatro lados do elemento. */
+.telão {
+  margin: 50px;
+}
+
+
+/*No bloco "container" utilizamos a propriedade POSITION:RELATIVE, a qual posiciona o elemento em relação a si mesmo, ou seja, o ponto zero será o canto superior esquerdo, e ele começará a contar a partir dali.*/
+.container {
+  position: relative;
+}
+
+
+/*No bloco "#image" utilizamos a propriedade DISPLAY:FLEX,onde  é utilizado para dispor os elementos dentro de um determinado container em linhas ou colunas,sem espaçamentos e na horizontal.Utilizamos tambem a propriedade ALIGN-ITEMS: CENTER, o qual garante que os flex-items dentro de um elemento com display flex vão centralizar na vertical ou horizontal.  A propriedade ALIGN-SELF estabelece o alinhamento de um certo item dentro do bloco que o contém, juntamente com o valor FLEX-START, onde o item é deslocado para o início do eixo transversal e tambem utilizado o FLEX:1, onde torna o item flexível  e define a base flexível como zero,  assim resulta em um item que recebe a proporção especificada de espaço livre no contêiner flexível.*/
+#image {
+  display: flex;
+  align-items: center; 
+  align-self: flex-start;
+  flex: 1;
+}
+
+/*No bloco "#texto" utilizamos a propriedade  POSITION:ABSOLUTE o qual elemento ficará em uma posição fixa em relação à página. DISPLAY:FLEX,onde  é utilizado para dispor os elementos dentro de um determinado container em linhas ou colunas. FONT-SIZE foi usada para indicar o tamanho da letra(fonte).FONT-FAMILY é  destinada a qual familia pertencerá o conjunto de letras ou palavras utilizadas-que no caso foi "Inconsolata". LEFT e TOP representantam em qual posição dentro da pagina o elemento texto ira ficar, e a propriedade COLOR  define a cor do texto.*/
+#texto {
+  position: absolute;
+  display: flex;
+  font-size: 90px;
+  font-family: 'Inconsolata', monospace;
+  left: 44%;
+  top: 20%;
+  color: #ffff
+}
